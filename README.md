@@ -1,6 +1,6 @@
-# Docker Template
+# UniFi API Browser
 
-a template for Docker projects
+A Docker image for UniFi API Browser
 
 [![license][license-img]][license-url]
 [![release][release-img]][release-url]
@@ -66,16 +66,16 @@ docker run \
 > Twitter: [@AhmadNassri](https://twitter.com/AhmadNassri)
 
 [license-url]: LICENSE
-[license-img]: https://badgen.net/github/license/ahmadnassri/template-docker
+[license-img]: https://badgen.net/github/license/ahmadnassri/docker-unifi-api-browser
 
-[release-url]: https://github.com/ahmadnassri/template-docker/releases
-[release-img]: https://badgen.net/github/release/ahmadnassri/template-docker
+[release-url]: https://github.com/ahmadnassri/docker-unifi-api-browser/releases
+[release-img]: https://badgen.net/github/release/ahmadnassri/docker-unifi-api-browser
 
-[size-url]: https://hub.docker.com/r/ahmadnassri/template-docker
-[size-img]: https://badgen.net/docker/size/ahmadnassri/template-docker?label=image%20size
+[size-url]: https://hub.docker.com/r/ahmadnassri/unifi-api-browser
+[size-img]: https://badgen.net/docker/size/ahmadnassri/unifi-api-browser?label=image%20size
 
-[docker-url]: https://hub.docker.com/r/ahmadnassri/template-docker
+[docker-url]: https://hub.docker.com/r/ahmadnassri/unifi-api-browser
 [docker-img]: https://badgen.net/badge/icon/docker%20hub?icon=docker&label
 
-[github-url]: https://github.com/users/ahmadnassri/packages/container/package/template-docker
+[github-url]: https://github.com/users/ahmadnassri/packages/container/package/unifi-api-browser
 [github-img]: https://badgen.net/badge/icon/github%20registry?icon=github&label
