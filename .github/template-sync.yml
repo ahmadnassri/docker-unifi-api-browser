@@ -1,0 +1,13 @@
+additional:
+  # temporarily include repos manually # https://github.com/github/docs/issues/3630
+  - "docker-*"
+
+files:
+  - "!.env"
+  - "!**/publish-matrix.json"
+  - "!**/template-sync.yml"
+  - "!colophon.yml"
+  - "!Dockerfile"
+  - "!docs/README.md"
+  - "!README.md"
+  - "!src/.gitignore"
