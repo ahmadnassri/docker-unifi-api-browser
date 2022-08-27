@@ -38,7 +38,13 @@ The API Browser lets you pull raw, JSON formatted data from the API running on y
 To get started this is the minimum number of options:
 
 ``` shell
-docker run --name unifi-api-browser -p:8000:8000 -e CONTROLLER_IP=  -e CONTROLLER_PASS=  -e CONTROLLER_USER= ahmadnassri/unifi-api-browser
+docker run \
+  --name unifi-api-browser \
+  --publish 8000:8000 \
+  --env CONTROLLER_IP= \
+  --env CONTROLLER_PASS= \
+  --env CONTROLLER_USER= \
+  ahmadnassri/unifi-api-browser
 ```
 
 The container will run on port `8000` by default.
@@ -50,10 +56,10 @@ Unifi-API-Browser supports multiple controllers. To use them create a copy of `u
 ``` shell
 docker run \
   --name unifi-api-browser \
-  -p:8000:8000 \
-  -e CONTROLLER_IP= \
-  -e CONTROLLER_PASS= \  
-  -e CONTROLLER_USER= \
+  --publish 8000:8000 \
+  --env CONTROLLER_IP= \
+  --env CONTROLLER_PASS= \  
+  --env CONTROLLER_USER= \
   -v <HostPath>/config.php:/app/config/config.php \
   -v <HostPath>/users.php:/app/config/users.php \
   ahmadnassri/unifi-api-browser
