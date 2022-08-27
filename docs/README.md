@@ -12,7 +12,7 @@ The API Browser lets you pull raw, JSON formatted data from the API running on y
 | --- | --- | --- | --- |
 | CONTROLLER_IP | ✅ |  | IP address of the Unifi Controller |
 | CONTROLLER_PASS | ✅ | | the password for access to the Unifi Controller |
-| CONTROLLER_USER | ✅ | | the user name for access to the Unifi Controller.&#13;&#10;&#13;&#10;NOTE: use a 'Local Access' account, not a 'Ubiquiti Account'. |
+| CONTROLLER_USER | ✅ | | the user name for access to the Unifi Controller. NOTE: use a 'Local Access' account, not a 'Ubiquiti Account'. |
 | CONTROLLER_PORT | ❌ |  `443`| Port if you changed the port UniFi is running on |
 | CONTROLLER_NAME | ❌ |  `UniFi Controller` | name for this controller which will be used in the dropdown menu |
 | DEBUG | ❌ |  `false` | set to 'true' (without quotes) to enable debug output to the browser and the PHP error log when fetching the sites collection after selecting a controller |
@@ -20,7 +20,7 @@ The API Browser lets you pull raw, JSON formatted data from the API running on y
 | UI_NAVBAR_BG_CLASS | ❌ |  `dark` | class for the main navigation bar background, valid options are: primary, secondary, success, danger, warning, info, light, dark, white, transparent |
 | UI_NAVBAR_CLASS | ❌ | `dark` | class for the main navigation bar, valid options are: light, dark |
 | UI_PASS | ❌ | `sha512(admin)` | Generate a SHA512 of the password you want and put here, you can use a tool like https://sha512.online/ by default the password is 'admin' |
-| UI_THEME | ❌ |  `darkly` | your default theme of choice, pick one from the list below:&#13;&#10;bootstrap, cerulean, cosmo, cyborg, darkly, flatly, journal, lumen, paper&#13;&#10;readable, sandstone, simplex, slate, spacelab, superhero, united, yeti |
+| UI_THEME | ❌ |  `darkly` | your default theme of choice, pick one from the list below: bootstrap, cerulean, cosmo, cyborg, darkly, flatly, journal, lumen, paper readable, sandstone, simplex, slate, spacelab, superhero, united, yeti |
 | UI_USER | ❌ |  `admin` | username to secure the API Browser instance |
 
 ## Usage
