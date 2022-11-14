@@ -1,4 +1,4 @@
-FROM alpine:3.14
+FROM alpine:3.16.3
 
 RUN apk update \
   && apk add --no-cache php php-session php-curl php-tokenizer composer git \
