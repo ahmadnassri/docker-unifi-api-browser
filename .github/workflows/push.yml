@@ -56,13 +56,10 @@ jobs:
           GITHUB_COMMENT_REPORTER: true
           GITHUB_STATUS_REPORTER: true
 
-      - uses: actions/upload-artifact@v3
+      - uses: github/codeql-action/upload-sarif@v2
         if: ${{ success() }} || ${{ failure() }}
         with:
-          name: mega-linter-reports
-          path: |
-            megalinter-reports
-            mega-linter.log
+            sarif_file: megalinter-reports/megalinter-report.sarif
 
   release:
     needs:
