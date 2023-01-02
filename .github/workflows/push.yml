@@ -56,10 +56,13 @@ jobs:
           GITHUB_COMMENT_REPORTER: true
           GITHUB_STATUS_REPORTER: true
 
-      - uses: github/codeql-action/upload-sarif@v2
+      - uses: actions/upload-artifact@v3
         if: ${{ success() }} || ${{ failure() }}
         with:
-            sarif_file: megalinter-reports/megalinter-report.sarif
+          name: mega-linter-reports
+          path: |
+            megalinter-reports
+            mega-linter.log
 
   release:
     needs:
@@ -88,7 +91,7 @@ jobs:
           submodules: true
 
       - id: release
-        uses: ahmadnassri/action-semantic-release@v2.1.11
+        uses: ahmadnassri/action-semantic-release@v2.1.12
         with:
           config: ${{ github.workspace }}/.semantic.json
         env:
