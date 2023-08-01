@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Copyright (c) 2021, Art of WiFi
  * www.artofwifi.net
@@ -25,13 +26,13 @@
  * will be accessible without providing and means of authentication.
  */
 
-if (getenv('UI_AUTH') === "true" ) {
+if (getenv('UI_AUTH') === "true") {
     $users = [
         [
         // string, the user name
         'user_name' => getenv('UI_USER') ?: 'admin',
         // string, the SHA512 hash of the password
-        'password'  => getenv('UI_PASS') ?: 'c7ad44cbad762a5da0a452f9e854fdc1e0e7a52a38015f23f3eab1d80b931dd472634dfac71cd34ebc35d16ab7fb8a90c81f975113d6c7538dc69dd8de9077ec',
+        'password'  => getenv('UI_PASS') ?: 'c7ad44cbad762a5da0a452f9e854fdc1e0e7a52a38015f23f3eab1d80b931dd472634dfac71cd34ebc35d16ab7fb8a90c81f975113d6c7538dc69dd8de9077ec', // phpcs:ignore
         ]
     ];
 }

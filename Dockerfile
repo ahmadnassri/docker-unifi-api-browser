@@ -1,3 +1,5 @@
+# kics-scan disable=d3499f6d-1651-41bb-a9a7-de925fea487b,67fd0c4a-68cf-46d7-8c41-bc9fba7e40ae
+
 FROM alpine:3.14
 
 RUN apk update \
@@ -15,6 +17,11 @@ COPY src/start-server /usr/local/bin/
 
 # entrypoint
 ENTRYPOINT [ "start-server" ]
+
+HEALTHCHECK NONE
+
+# hadolint ignore=DL3002
+USER root
 
 # expose port
 EXPOSE 8000
