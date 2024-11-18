@@ -1,0 +1,8 @@
+{
+  "name": "unifi-api-browser",
+  "platforms": "linux/amd64,linux/arm64",
+  "registries": [
+    "ghcr.io",
+    "docker.io"
+  ]
+}
