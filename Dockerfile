@@ -1,6 +1,6 @@
 # kics-scan disable=d3499f6d-1651-41bb-a9a7-de925fea487b,67fd0c4a-68cf-46d7-8c41-bc9fba7e40ae
 
-FROM alpine:3.20
+FROM alpine:3.21
 
 RUN apk update \
   && apk add --no-cache php php-session php-curl php-tokenizer composer git \
